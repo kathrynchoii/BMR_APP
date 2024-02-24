@@ -1,0 +1,109 @@
+.bmr_calculator {
+    max-width: 300px;
+    font-family: "Arial", sans-serif;
+    padding: 8px 24px;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Center horizontally */
+    display: block;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.bmr_calculator, 
+.bmr_calculator * {
+    box-sizing: border-box;
+}
+
+.bmr_calculator h2{
+    text-align: center;
+    background: rgb(90, 114, 88);
+    color:rgb(255, 255, 255);
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+.bmr_calculator form h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+
+.bmr_calculator form input[type='text']{
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid darkslategrey;
+}
+
+.bmr_calculator form input[type="text"].invalid{
+    border: 1 px solid red;
+}
+
+.bmr_calculator form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bmr_calculator form #female{
+    margin-left: 20px;
+}
+
+.bmr_calculator form .height,
+.bmr_calculator form .weight{
+    position:relative;
+}
+
+.bmr_calculator form .unit{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    color:darkslategrey;
+}
+
+.bmr_calculator form .unit1{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color:darkslategrey;
+}
+
+.bmr_calculator .result .calculate-btn {
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background: rgb(90, 114, 88);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.bmr_calculator .result {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+.bmr_calculator .result .calories{
+    color:darkslategrey;
+    font-size: 35px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.bmr_calculator .result .error-message{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.bmr_calculator .result .error-message.active{
+    display: block;
+}
