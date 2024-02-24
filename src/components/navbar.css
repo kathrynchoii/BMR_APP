@@ -1,25 +1,75 @@
-/* navbar.css */
 .navbar {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar ul li a {
+    background-color: black;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed; /* Fix the navbar at the top of the viewport */
+    width: 100%; /* Ensure the navbar spans the entire width of the viewport */
+    top: 0; /* Position the navbar at the top */
+    left: 0;
+    z-index: 1000; /* Ensure the navbar is above other content */
+   
+  }
+  
+  .title-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from its parent, useful if you don't want to change the text color */
+  }
+  
+  .container {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
     color: #fff;
     text-decoration: none;
-}
-
-.navbar ul li a:hover {
-    color: #00f;
-}
+  }
+  
+  .navbar-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center items vertically */
+  }
+    
+  .nav-item {
+      margin-right: 50px; /* Add spacing between items */
+  }
+  
+  .nav-link {
+  
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .title{
+      color: white;
+      font-size: 25px;
+      font-family: 'Courier New', Courier, monospace;
+      width: 500px;
+      margin-left: 15px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .brand-logo{
+    width: auto;
+    height: 90px;
+  }
+  
+  .title-stuff{
+    margin-right: 175px;
+  }
+  
+  .image{
+    width: 100px;
+    height: auto;
+  }
