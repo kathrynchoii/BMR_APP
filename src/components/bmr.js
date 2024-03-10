@@ -1,6 +1,6 @@
 // bmr.js
 import React, { useState } from 'react';
-import './homepage.css';
+import './BMR.css';
 
     const Homepage = () => {
     const [age, setAge] = useState('25');
@@ -56,7 +56,7 @@ import './homepage.css';
                     <div className="weight">
                         <h3>Weight</h3>
                         <input type="text" value={weight} onChange={(e) => setWeight(e.target.value)} />
-                        <div className="unit">lb</div>
+                        <div className="unit2">lb</div>
                     </div>
                 </form>
             </div>

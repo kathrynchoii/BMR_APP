@@ -1,0 +1,90 @@
+.bmi_calculator {
+    max-width: 300px;
+    font-family: "Arial", sans-serif;
+    padding: 8px 24px;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    margin: 100px auto 0; /* Increased top margin to 100px */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmi_calculator h2 {
+    text-align: center;
+    background: rgb(90, 114, 88);
+    color: rgb(255, 255, 255);
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+.bmi_calculator .controls {
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.bmi_calculator .controls form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+}
+
+.bmi_calculator .controls h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.bmi_calculator .controls input[type='text'] {
+    width: calc(100% - 20px); 
+    max-width: 170px; 
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid darkslategrey;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.bmi_calculator .controls .unit {
+    position: absolute; 
+    right: 8px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 14px;
+    color: darkslategrey;
+}
+
+.bmi_calculator .controls .height input[type='text'] {
+    margin-bottom: 10px; 
+}
+
+.bmi_calculator .result .calculate-btn {
+    padding: 8px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: rgb(90, 114, 88);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+.bmi_calculator .result-message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.bmi_calculator .error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.bmi_calculator .error-message.active {
+    display: block;
+}
