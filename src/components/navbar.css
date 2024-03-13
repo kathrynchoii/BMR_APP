@@ -1,3 +1,4 @@
+/* navbar.css */
 .navbar {
     background-color: black;
     color: #fff;
@@ -7,69 +8,68 @@
     top: 0; /* Position the navbar at the top */
     left: 0;
     z-index: 1000; /* Ensure the navbar is above other content */
+}
 
-  }
-  
-  .title-link {
+.title-link {
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Inherits the color from its parent, useful if you don't want to change the text color */
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 100px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-  }
-  
-  .navbar-nav {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex; /* Use flexbox to align items */
-      align-items: center; /* Center items vertically */
-  }
-    
-  .nav-item {
-      margin-right: 50px; /* Add spacing between items */
-  }
-  
-  .nav-link {
-  
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Push the navigation links to the right */
+}
+
+.nav-item {
+    margin-right: 115px; /* Add spacing between items */
+}
+
+.nav-link {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
     padding: 15px;
     font-family: 'Courier New', Courier, monospace;
-  }
-  
-  .title{
-      color: white;
-      font-size: 25px;
-      font-family: 'Courier New', Courier, monospace;
-      width: 500px;
-      margin-left: 15px;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  .brand-logo{
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    margin-left: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo {
     width: auto;
     height: 90px;
-  }
-  
-  .title-stuff{
+}
+
+.title-stuff {
     margin-right: 175px;
-  }
-  
-  .image{
+}
+
+.image {
     width: 100px;
     height: auto;
-  }
+}
