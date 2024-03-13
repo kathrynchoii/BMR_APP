@@ -40,7 +40,7 @@ import './BMI.css';
                     <div className="weight">
                         <h3>Weight</h3>
                         <input type="text" value={weight} onChange={(e) => setWeight(e.target.value)} />
-                        <div className="unit">lb</div>
+                        <div className="unit2">lb</div>
                     </div>
                 </form>
             </div>
