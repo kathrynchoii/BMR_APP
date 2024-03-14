@@ -2,74 +2,58 @@
 .navbar {
     background-color: black;
     color: #fff;
-    padding: 15px 0;
-    position: fixed; /* Fix the navbar at the top of the viewport */
-    width: 100%; /* Ensure the navbar spans the entire width of the viewport */
-    top: 0; /* Position the navbar at the top */
+    padding: 25px 10px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
     left: 0;
-    z-index: 1000; /* Ensure the navbar is above other content */
-}
-
-.title-link {
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Inherits the color from its parent, useful if you don't want to change the text color */
-}
-
-.container {
-    max-width: 100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+}
+.navbar-logo {
+    height: 40px; 
+    margin-right: 15px;  /*Space between Logo and Text*/
 }
 
+/* Container for navigation items */
 .navbar-nav {
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to align items */
+    margin: 0;
+    display: flex; /* Align nav items in a row */
     align-items: center; /* Center items vertically */
-    margin-left: auto; /* Push the navigation links to the right */
 }
 
 .nav-item {
-    margin-right: 115px; /* Add spacing between items */
+    margin-right: 35px; 
 }
 
 .nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 15px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.title {
     color: white;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 500px;
-    margin-left: 15px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px;
+    transition: color 0.3s; /*HOVER EFFECT*/
 }
 
-.brand-logo {
-    width: auto;
-    height: 90px;
+.nav-link:hover {
+    color: #aaaaaa; /*Hover Color*/
 }
 
-.title-stuff {
-    margin-right: 175px;
+.nav-item.active .nav-link {
+    color: #ffffff; 
+    font-weight: bold; 
 }
 
-.image {
-    width: 100px;
-    height: auto;
-}

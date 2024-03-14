@@ -1,6 +1,7 @@
 // bmr.js
 import React, { useState } from 'react';
 import './BMR.css';
+import backgroundImage from './bmrIMAGE.jpeg';
 
     const Homepage = () => {
     const [age, setAge] = useState('25');
@@ -33,41 +34,43 @@ import './BMR.css';
 };
 
     return (
-        <div className="bmr_calculator">
-            <h2>BMR CALCULATOR</h2>
-            <div className="controls">
-                <form>
-                    <h3>Age</h3>
-                    <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
-                    <div className="gender">
-                        <h3>Gender</h3>
-                        <input type="radio" value="male" name="gender" checked={true} />
-                        <label htmlFor="male">Male</label>
-                        <input type="radio" value="female" name="gender" />
-                        <label htmlFor="female">Female</label>
-                    </div>
-                    <div className="height">
-                        <h3>Height</h3>
-                        <input type="text" value={heightFt} onChange={(e) => setHeightFt(e.target.value)} />
-                        <div className="unit">ft</div>
-                        <input type="text" value={heightIn} onChange={(e) => setHeightIn(e.target.value)} />
-                        <div className="unit1">in</div>
-                    </div> 
-                    <div className="weight">
-                        <h3>Weight</h3>
-                        <input type="text" value={weight} onChange={(e) => setWeight(e.target.value)} />
-                        <div className="unit2">lb</div>
-                    </div>
-                </form>
-            </div>
-
-            <div className="result">
-                <button className="calculate-btn" onClick={calculateBMR}>CALCULATE</button>
-                <div className="result-message">
-                    <span className="calories">{bmr}</span> Calories/day
+        <div className="bmr-page" style={{ backgroundImage: `url(${backgroundImage})` }}>
+            <div className="bmr_calculator">
+                <h2>BMR CALCULATOR</h2>
+                <div className="controls">
+                    <form>
+                        <h3>Age</h3>
+                        <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
+                        <div className="gender">
+                            <h3>Gender</h3>
+                            <input type="radio" value="male" name="gender" checked={true} />
+                            <label htmlFor="male">Male</label>
+                            <input type="radio" value="female" name="gender" />
+                            <label htmlFor="female">Female</label>
+                        </div>
+                        <div className="height">
+                            <h3>Height</h3>
+                            <input type="text" value={heightFt} onChange={(e) => setHeightFt(e.target.value)} />
+                            <div className="unit">ft</div>
+                            <input type="text" value={heightIn} onChange={(e) => setHeightIn(e.target.value)} />
+                            <div className="unit1">in</div>
+                        </div> 
+                        <div className="weight">
+                            <h3>Weight</h3>
+                            <input type="text" value={weight} onChange={(e) => setWeight(e.target.value)} />
+                            <div className="unit2">lb</div>
+                        </div>
+                    </form>
                 </div>
-                <div className={`error-message ${errorMessageVisible ? 'active' : ''}`}>
-                    <p>Please enter all the details correctly.</p>
+
+                <div className="result">
+                    <button className="calculate-btn" onClick={calculateBMR}>CALCULATE</button>
+                    <div className="result-message">
+                        <span className="calories">{bmr}</span> Calories/day
+                    </div>
+                    <div className={`error-message ${errorMessageVisible ? 'active' : ''}`}>
+                        <p>Please enter all the details correctly.</p>
+                    </div>
                 </div>
             </div>
         </div>
