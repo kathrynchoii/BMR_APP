@@ -1,0 +1,16 @@
+/* src/components/footer.css */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    width: 100%; /* Ensures the footer is full width */
+    position: fixed; /*Footer will stay at the bottom */
+    left: 0;
+    bottom: 0;
+    z-index: 1000; 
+}
+
+.footer-content {
+    font-size: 16px;
+}

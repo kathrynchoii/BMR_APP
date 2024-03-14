@@ -33,7 +33,7 @@ import './BMI.css';
                     <div className="height">
                         <h3>Height</h3>
                         <input type="text" value={heightFt} onChange={(e) => setHeightFt(e.target.value)} />
-                        <div className="unit">ft</div>
+                        <div className="unit3">ft</div>
                         <input type="text" value={heightIn} onChange={(e) => setHeightIn(e.target.value)} />
                         <div className="unit1">in</div>
                     </div> 
