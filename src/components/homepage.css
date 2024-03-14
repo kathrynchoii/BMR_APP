@@ -1,0 +1,53 @@
+/* homepage.css */
+.video-background {
+    width: 100%; 
+    height: auto; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .text-container {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+  }
+  .buttons-container {
+    text-align: center; /* Center the buttons */
+    position: absolute;
+    top: 60%; /* BUTTNS Will appear here under the txt */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure they're above the video */
+    opacity: 0; 
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  .btn {
+    background-color: pink; /* Base color */
+    color: white;
+    padding: 14px 25px; 
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s; /* Smooth transition */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 10px 25px;
+  }
+  .btn:hover {
+    background-color: rgb(228, 172, 182); /* Darker shade of green on hover */
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
