@@ -1,3 +1,4 @@
+
 /* homepage.css */
 .video-background {
     width: 100%; 
@@ -44,7 +45,79 @@
     margin: 10px 25px;
   }
   .btn:hover {
-    background-color: rgb(228, 172, 182); /* Darker shade of green on hover */
+    background-color: rgb(228, 172, 182); 
+  }
+
+  /*AI PORITON*/
+  /* Chatbot Button */
+  .chatbot-button {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    background-color: #f06292; /* Pink shade to match button */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above everything else */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .chatbot-button:hover {
+    background-color: #d81b60; /* A darker pink for hover state */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Chatbot Window */
+  .chatbot-window {
+    position: fixed;
+    bottom: 135px; /* Positioned above the button */
+    right: 50px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+  }
+
+  /* Show the chat window when .chatbot-window-open is added to the chatbot window */
+  .chatbot-window-open {
+    display: flex;
+  }
+
+  /* Chatbot messages container */
+  .chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  /* Input area */
+  .chat-input-area {
+    border-top: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  .chat-input {
+    width: 90%;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 0; /* Override default margins */
+  }
+
+  .chat-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #b2dfdb;
   }
 
   @keyframes fadeIn {
