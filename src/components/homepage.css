@@ -79,8 +79,8 @@
     position: fixed;
     bottom: 135px; /* Positioned above the button */
     right: 50px;
-    width: 550px;
-    height: 610px;
+    width: 500px;
+    height: 550px;
     background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;

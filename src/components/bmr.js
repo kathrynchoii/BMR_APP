@@ -1,7 +1,6 @@
 // bmr.js
 import React, { useState } from 'react';
 import './BMR.css';
-import backgroundImage from './bmrIMAGE.jpeg';
 
     const Homepage = () => {
     const [age, setAge] = useState('25');
@@ -34,7 +33,7 @@ import backgroundImage from './bmrIMAGE.jpeg';
 };
 
     return (
-        <div className="bmr-page" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="bmr-page">
             <div className="bmr_calculator">
                 <h2>BMR CALCULATOR</h2>
                 <div className="controls">

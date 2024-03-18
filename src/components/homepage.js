@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './homepage.css';
-import video from './videoOne.mp4';
 import axios from 'axios';
 
 // Frequently Asked Questions
@@ -76,7 +75,7 @@ function Home() {
   return (
     <div className="home">
       <video autoPlay muted loop id="video-background" className="video-background">
-        <source src={video} type="video/mp4" />
+        <source src="/videoOne.mp4" type="video/mp4" />
       </video>
       <div className="text-container">{typedText}</div>
       {typedText === fullText && (
