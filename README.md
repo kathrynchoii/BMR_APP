@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `npm install axios` ###
+
+This is needed to make the axios post requests for the OPENAI API to respond in the ChatBot on the HomePage
+
+
+### `npm install cors` ###
+
+The cors package enables your server to accept requests from web pages hosted on different domains, preventing cross-origin errors.
+
+
+### `npm install three-stdlib` ###
+
+The three-stdlib package provides additional utilities and helpers for Three.js, enhancing its core functionalities for more complex 3D modeling tasks.
+
+
+### `npm install @mediapipe/tasks-vision` ###
+
+The @mediapipe/tasks-vision package offers pre-trained machine learning models for vision tasks, integrating easily with web applications for advanced image and video analysis.

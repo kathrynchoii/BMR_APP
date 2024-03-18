@@ -79,14 +79,15 @@
     position: fixed;
     bottom: 135px; /* Positioned above the button */
     right: 50px;
-    width: 350px;
-    height: 500px;
+    width: 500px;
+    height: 550px;
     background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     z-index: 1000;
     display: none; /* Hidden by default */
     flex-direction: column;
+
   }
 
   /* Show the chat window when .chatbot-window-open is added to the chatbot window */
@@ -99,19 +100,45 @@
     flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
+    flex-grow: 1; /* Allow this to grow and take available space */
+    font-family: 'Arial', sans-serif;
+  }
+
+  .message {
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between messages */
+    background: #f9f9f9; /* Light background for the message */
+    border-radius: 10px; /* Rounded corners for the messages */
+    border-bottom: 2px solid #eee; /* Line separation for each message */
+    font-size: 16px; /* Modern font size */
+    color: #333; /* Darker text for better readability */
+    display: flex; /* Use flexbox for alignment */
+    gap: 8px; /* Add a small space between the label and message */
+  }
+  /* User message styling */
+  .message.user {
+    background: rgb(243, 144, 218); /* Different background for user messages */
+    text-align: right; /* Align user text to the right */
+    justify-content: flex-end;
+  }
+
+  /* Bot message styling */
+  .message.bot {
+    background: rgb(250, 194, 236); /* Different background for bot messages */
+    text-align: left; /* Align bot text to the left */
   }
 
   /* Input area */
   .chat-input-area {
     border-top: 1px solid #ddd;
-    padding: 5px;
+    padding: 10px;
   }
 
   .chat-input {
     width: 90%;
     border: none;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-bottom: 0; /* Override default margins */
   }
 
@@ -124,3 +151,62 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
+  /* Send Button Style */
+.send-btn {
+  background-image: linear-gradient(to right, #ff758c, #ff7eb3); /* Pink gradient */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Padding inside the button */
+  font-size: 15px; /* Font size */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Mouse pointer */
+  outline: none; /* Remove outline */
+  transition: all 0.3s ease; /* Transition for smooth color fill */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  border: 2px solid transparent; /* Border to maintain button size during state changes */
+  margin-top: 10px;
+}
+
+/* Hover and active states for Send button */
+.send-btn:hover, .send-btn:active {
+  background-image: linear-gradient(to left, #ff758c, #ff7eb3); /* Gradient direction change */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow */
+  transform: translateY(-1px); /* Move the button up slightly */
+}
+
+/* Focus state for accessibility */
+.send-btn:focus {
+  border-color: #fff; /* Border color change to indicate focus */
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Glow effect for focus */
+}
+
+/*FAQ*/
+.faq-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap if there are many */
+  justify-content: center; /* Center buttons if there is space available */
+  margin: 5px 0; /* Margin at the top and bottom */
+  position: absolute; /* Position absolutely to stay at the bottom */
+  bottom: 105px; /* Give some space for the input area */
+  left: 0;
+  right: 0;
+}
+
+.faq-btn {
+  background-color: #fac8e1; /* Light gray color */
+  color: #333; /* Dark font for readability */
+  padding: 10px 15px;
+  margin: 5px; /* Space between buttons */
+  margin-left: 10px;
+  border: 1px solid #ddd; /* Border for definition */
+  border-radius: 100px; /* Slight rounding of corners */
+  text-align: bottom; /* Align text to the left */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Transition for background color change on hover */
+  flex: 0 0 auto;
+}
+
+.faq-btn:hover {
+  background-color: #e996c4; /* Slightly darker on hover */
+}
