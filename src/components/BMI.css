@@ -1,14 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.bmi-page {
+    min-height: 100vh; /* Minimum height to fill the viewport */
+    background-image: url('./bmrIMAGE.jpeg'); /* Update with the correct path if needed */
+    background-size: cover; /* Cover the entire viewport without stretching */
+    background-position: center; /* Center the image in the viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* The background image does not scroll */
+    overflow: hidden; /* Hide the overflow to prevent scrolling */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    padding: 0; /* Remove padding to prevent any extra space causing scroll */
+    margin: 0; /* Remove margin to ensure the image spans the full size of the viewport */
+}
 
 .bmi_calculator {
     max-width: 300px;
+    background: rgb(255, 255, 255);
     font-family: "Arial", sans-serif;
     padding: 8px 24px;
     box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
-    margin: 100px auto 0; /* Increased top margin to 100px */
+    margin: 140px auto 0; /* Increased top margin to 100px */
     display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .bmi_calculator h2 {
@@ -16,48 +38,12 @@
     background: rgb(90, 114, 88);
     color: rgb(255, 255, 255);
     margin: -8px -24px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     padding: 16px;
-}
-/*INCHES*/
-.bmi_calculator .controls .unit1{
-    position: absolute;
-    right: 885px; /* Position the unit to the right inside the input */
-    top: -230px; 
-    bottom: 0;
-    height: 100%; /* Full height of the parent */
-    display: flex;
-    align-items: center; /* Center vertically */
-    font-size: 14px;
-    color: darkslategrey;
-}
-/*FEET*/
-.bmi_calculator .controls .unit3{
-    position: absolute;
-    right: 885px; /* Position the unit to the right inside the input */
-    top: -275px; 
-    bottom: 0;
-    height: 100%; /* Full height of the parent */
-    display: flex;
-    align-items: center; /* Center vertically */
-    font-size: 14px;
-    color: darkslategrey;
-}
-/*POUNDS*/
-.bmi_calculator .controls .unit2 {
-    position: absolute;
-    right: 893px; /* Position the unit to the right inside the input */
-    top: -155px; 
-    bottom: 0;
-    height: 100%; /* Full height of the parent */
-    display: flex;
-    align-items: center; /* Center vertically */
-    font-size: 14px;
-    color: darkslategrey;
 }
 
 .bmi_calculator .controls {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center; 
 }
 
@@ -87,6 +73,48 @@
     margin-bottom: 10px; 
 }
 
+.bmi_calculator .height .feet .ft {
+    margin-left: -18px;
+    margin-top: 10px;
+}
+
+.bmi_calculator .height .inches .in {
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+.bmi_calculator .weight .pounds .lbs {
+    margin-left: -30px;
+    margin-top: 10px;
+}
+
+.bmi_calculator .height .feet {
+    color: darkslategrey;
+    display: flex;
+    font-size: 16px;
+    font-weight: 300; 
+    margin-top: 5px;
+    margin-right: -20px;
+}
+
+.bmi_calculator .height .inches {
+    color: darkslategrey;
+    display: flex;
+    font-size: 16px;
+    font-weight: 300; 
+    margin-right: -20px;
+}
+
+.bmi_calculator .weight .pounds {
+    color: darkslategrey;
+    display: flex;
+    font-size: 16px;
+    font-weight: 300; 
+    margin-top: 5px;
+    margin-right: -20px;
+}
+
+
 .bmi_calculator .result .calculate-btn {
     padding: 8px 24px;
     font-size: 18px;
@@ -97,13 +125,29 @@
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: block;
-    margin: 0 auto; /* Center the button horizontally */
+    margin: 0 auto;
+    margin-bottom: 15px; 
 }
 
-.bmi_calculator .result-message {
+.bmi_calculator .result .calculate-btn:hover {
+    background: rgb(75, 94, 73); /*Hover Color*/
+}
+
+.bmi_calculator .result {
     text-align: center;
+    color: darkslategrey;
+    font-size: 35px; /* Decreased font size */
+    font-weight: 800;
+    margin-bottom: 5px;
+    vertical-align: middle; 
+}
+
+.bmi_calculator .result .unit {
+    text-align: center;
+    color: black;
     font-size: 18px;
-    margin-top: 20px;
+    font-weight: 900; 
+    margin-top: 3px;
 }
 
 .bmi_calculator .error-message {
