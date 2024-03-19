@@ -7,10 +7,10 @@ html, body {
 /*FOR BACKGROUND PHOTO*/
 .bmr-page {
     min-height: 100vh; /* Minimum height to fill the viewport */
-    background-image: url('/public/bmrIMAGE.jpeg'); /* Update with the correct path if needed */
+    background-image: url('/public/bmrIMAGE.jpeg'); 
     background-size: cover; /* Cover the entire viewport without stretching */
     background-position: center; /* Center the image in the viewport */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-repeat: no-repeat; 
     background-attachment: fixed; /* The background image does not scroll */
     overflow: hidden; /* Hide the overflow to prevent scrolling */
     display: flex; /* Use flexbox for layout */

@@ -87,3 +87,7 @@ The three-stdlib package provides additional utilities and helpers for Three.js,
 ### `npm install @mediapipe/tasks-vision` ###
 
 The @mediapipe/tasks-vision package offers pre-trained machine learning models for vision tasks, integrating easily with web applications for advanced image and video analysis.
+
+### `npm install react-scripts --save` ###
+to do npm run
+

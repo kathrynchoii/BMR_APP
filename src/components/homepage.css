@@ -87,7 +87,6 @@
     z-index: 1000;
     display: none; /* Hidden by default */
     flex-direction: column;
-
   }
 
   /* Show the chat window when .chatbot-window-open is added to the chatbot window */
@@ -106,14 +105,14 @@
 
   .message {
     padding: 10px;
-    margin-bottom: 10px; /* Add space between messages */
+    margin-bottom: 10px; /* space between messages */
     background: #f9f9f9; /* Light background for the message */
-    border-radius: 10px; /* Rounded corners for the messages */
+    border-radius: 10px; 
     border-bottom: 2px solid #eee; /* Line separation for each message */
-    font-size: 16px; /* Modern font size */
-    color: #333; /* Darker text for better readability */
-    display: flex; /* Use flexbox for alignment */
-    gap: 8px; /* Add a small space between the label and message */
+    font-size: 16px; 
+    color: #333; 
+    display: flex; 
+    gap: 8px; /* small space between the label and message */
   }
   /* User message styling */
   .message.user {
@@ -157,8 +156,8 @@
   background-image: linear-gradient(to right, #ff758c, #ff7eb3); /* Pink gradient */
   color: white;
   border: none;
-  padding: 10px 15px; /* Padding inside the button */
-  font-size: 15px; /* Font size */
+  padding: 10px 15px;
+  font-size: 15px; 
   border-radius: 25px; /* Rounded corners */
   cursor: pointer; /* Mouse pointer */
   outline: none; /* Remove outline */
@@ -184,24 +183,24 @@
 /*FAQ*/
 .faq-buttons {
   display: flex;
-  flex-wrap: wrap; /* Allow buttons to wrap if there are many */
-  justify-content: center; /* Center buttons if there is space available */
+  flex-wrap: wrap; 
+  justify-content: center; /* Center buttons */
   margin: 5px 0; /* Margin at the top and bottom */
   position: absolute; /* Position absolutely to stay at the bottom */
-  bottom: 105px; /* Give some space for the input area */
+  bottom: 105px; /* Give space for the input area */
   left: 0;
   right: 0;
 }
 
 .faq-btn {
-  background-color: #fac8e1; /* Light gray color */
-  color: #333; /* Dark font for readability */
+  background-color: #fac8e1; 
+  color: #333; 
   padding: 10px 15px;
   margin: 5px; /* Space between buttons */
   margin-left: 10px;
   border: 1px solid #ddd; /* Border for definition */
   border-radius: 100px; /* Slight rounding of corners */
-  text-align: bottom; /* Align text to the left */
+  text-align: bottom; 
   cursor: pointer; /* Change cursor to pointer */
   transition: background-color 0.3s; /* Transition for background color change on hover */
   flex: 0 0 auto;

@@ -11,7 +11,7 @@ import About from './components/About';
 
 function App() {
     useEffect(() => {
-        document.title = 'BMR APP';
+        document.title = 'Wellness Watcher';
     }, []);
 
     return (
