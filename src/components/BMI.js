@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './BMI.css';
-import backgroundImage from './bmiIMAGE.jpeg';
 
 const Homepage = () => {
     const [heightFt, setHeightFt] = useState('5');
