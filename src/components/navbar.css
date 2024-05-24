@@ -1,4 +1,4 @@
-/* navbar.css */
+/* Navbar styling */
 .navbar {
     background-color: black;
     color: #fff;
@@ -13,6 +13,7 @@
     justify-content: space-between; 
 }
 
+/* Brand styling */
 .navbar-brand {
     font-size: 22px;
     font-weight: bold;
@@ -21,12 +22,13 @@
     display: flex;
     align-items: center;
 }
+
 .navbar-logo {
     height: 40px; 
-    margin-right: 15px;  /*Space between Logo and Text*/
+    margin-right: 15px;  /* Space between Logo and Text */
 }
 
-/* Container for navigation items */
+/* Navigation items container */
 .navbar-nav {
     list-style: none;
     padding: 0;
@@ -35,21 +37,23 @@
     align-items: center; /* Center items vertically */
 }
 
+/* Individual nav item */
 .nav-item {
     margin-right: 35px; 
 }
 
+/* Nav link styling */
 .nav-link {
     color: white;
     text-decoration: none;
     font-size: 20px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0px;
-    transition: color 0.3s; /*HOVER EFFECT*/
+    transition: color 0.3s; /* HOVER EFFECT */
 }
 
 .nav-link:hover {
-    color: #aaaaaa; /*Hover Color*/
+    color: #aaaaaa; /* Hover Color */
 }
 
 .nav-item.active .nav-link {
@@ -57,3 +61,18 @@
     font-weight: bold; 
 }
 
+/* Sign-out button styling */
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s; /* HOVER EFFECT */
+}
+
+.logout-button:hover {
+    color: #aaaaaa; /* Hover Color */
+}

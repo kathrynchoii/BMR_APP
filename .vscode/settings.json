@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "name": "MySQL Localhost",
+            "driver": "MySQL",
+            "server": "127.0.0.1",
+            "port": 3306,
+            "database": "wellness_watcher",
+            "username": "ehab2001",
+            "password": "admin123"
+        }
+    ]
+}
