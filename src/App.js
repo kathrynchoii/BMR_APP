@@ -6,7 +6,6 @@ import Navbar from './components/navbar';
 import Footer from './components/Footer';
 import BMI from './components/BMI';
 import BMR from './components/bmr';
-import Workouts from './components/Workouts';
 import About from './components/About'; 
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
                     <Route path="/homepage" element={<Homepage />} />
                     <Route path="/BMR" element={<BMR />} /> 
                     <Route path="/BMI" element={<BMI />} />
-                    <Route path="/Workouts" element={<Workouts />} />
                     <Route path="/about" element={<About />} /> 
                 </Routes>
                 <Footer />
