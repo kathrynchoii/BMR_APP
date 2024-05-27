@@ -15,6 +15,3 @@ INSERT IGNORE INTO users (username, password) VALUES ('kathryn2004', 'admin456')
 -- Select all users
 SELECT * FROM users;
 
-USE wellness_watcher;
-SELECT * FROM users;
-
