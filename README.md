@@ -79,15 +79,13 @@ This is needed to make the axios post requests for the OPENAI API to respond in 
 The cors package enables your server to accept requests from web pages hosted on different domains, preventing cross-origin errors.
 
 
-### `npm install three-stdlib` ###
-
-The three-stdlib package provides additional utilities and helpers for Three.js, enhancing its core functionalities for more complex 3D modeling tasks.
-
-
 ### `npm install @mediapipe/tasks-vision` ###
 
 The @mediapipe/tasks-vision package offers pre-trained machine learning models for vision tasks, integrating easily with web applications for advanced image and video analysis.
 
 ### `npm install react-scripts --save` ###
 to do npm run
+
+### `To Launch backend server for login` ###
+"node server.js" in any terminal window 
 

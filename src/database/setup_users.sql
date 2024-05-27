@@ -12,6 +12,4 @@ CREATE TABLE IF NOT EXISTS users (
 INSERT IGNORE INTO users (username, password) VALUES ('ehab2001', 'admin123');
 INSERT IGNORE INTO users (username, password) VALUES ('kathryn2004', 'admin456');
 
--- Select all users
-SELECT * FROM users;
 
