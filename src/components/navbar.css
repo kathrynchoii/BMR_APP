@@ -60,19 +60,3 @@
     color: #ffffff; 
     font-weight: bold; 
 }
-
-/* Sign-out button styling */
-.logout-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    cursor: pointer;
-    padding: 0;
-    transition: color 0.3s; /* HOVER EFFECT */
-}
-
-.logout-button:hover {
-    color: #aaaaaa; /* Hover Color */
-}
